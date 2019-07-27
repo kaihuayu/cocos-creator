@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Flysprite",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "78b32c95-6b84-4a5e-94a5-a8899fa788ae"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "095513f9-f833-41be-91da-71933d633d36"
+            }
+          },
+          {
+            "frame": 0.31666666666666665,
+            "value": {
+              "__uuid__": "c4b7fc42-3cf8-42e6-953d-d6316cb7ae15"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
