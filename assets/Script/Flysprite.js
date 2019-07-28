@@ -13,27 +13,12 @@ cc.Class({
 
     properties: {
         Flysprite:{
-
             default: null,
             type: cc.Node	
         },
         left:false,
         right:false,
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+  
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -76,7 +61,9 @@ cc.Class({
     // called every frame
     update (dt) {
         if (this.right){
+            
         this.Flysprite.x += this.speed* dt;
+            
         }
 
            if (this.left){
@@ -87,19 +74,19 @@ cc.Class({
 
 },
 
-turnLeft () {
+    turnLeft () {
+        
+        this.speed = -100;
+        this.Flysprite.scaleX = 1;
+        this.right=false;
+    },
+
+    turnRight () {
     
-    this.speed = -100;
-    this.Flysprite.scaleX = 1;
-    this.right=false;
-},
+        this.speed= 100;
+        this.Flysprite.scaleX = -1;
+        this.left=false;
+    }
 
-turnRight () {
-  
-    this.speed= 100;
-    this.Flysprite.scaleX = -1;
-    this.left=false;
-}
-
-    //update (dt) {},
+        //update (dt) {},
 });
